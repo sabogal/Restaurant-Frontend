@@ -1,7 +1,8 @@
 import { Plus, X } from 'lucide-react'
 import React, { useContext } from 'react'
 import { Shoppingcart } from '../context/context'
-import domain from './urls'
+import { domain } from './urls'
+
 export const ProductDetail = () => {
     const context = useContext(Shoppingcart)
 
