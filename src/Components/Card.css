@@ -1,0 +1,128 @@
+.card {
+	margin-right: 20px;
+	margin-top: 20px	;
+	background-color: white;
+	color: #272727;
+	padding: 20px;
+	border-radius: 10px;
+	border: 0px;
+	border-color: tomato;
+	border-style: solid;
+	max-width: 100%; 
+
+}
+
+.card:hover {
+	border: 1px;
+	border-color: rgb(253, 146, 127);
+	border-style: solid;
+}
+
+.card-header {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+
+}
+
+.card-price {
+	margin-top: 20px;
+}
+
+.card-price-h3 {
+    font-size: 1.8em; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    color: tomato; /* Color de la fuente */
+    font-family: "Rebuschets MS", sans-serif; /* Tipo de letra */
+
+}
+
+.profile {
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: rgb(250, 183, 121);
+	border-radius: 50%;
+	margin: 10px;
+	font-size: 20pt;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	justify-content: center;
+}
+
+.letter {
+	vertical-align: middle;
+}
+
+.card-title-group {
+	justify-content: center;
+}
+
+.card-title {
+	flex: 0.5;
+	font-size: large;
+	margin-bottom: 0;
+	margin-top:0;
+}
+.card-date {
+	flex: 0.3;
+	font-size: small;
+	margin-top: 0;
+}
+
+
+
+
+.card-text {
+ 
+	width: 256px;
+	font-size: large;
+	margin-top:30px;
+	margin-bottom: 30px;
+}
+
+
+.card-like-bar {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	justify-content: space-between;
+}
+
+.like-text {
+	font-size: small;
+	margin-left: 10px;
+}
+
+.image-container {
+    max-width: 100%; /* Establece el ancho máximo para asegurar que la imagen no se desborde */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde del contenedor */
+}
+
+.button-box {
+	text-align: center;
+    width: 100%;
+	
+}
+.purchase {
+    cursor: pointer;
+    width: 60%;
+    border-radius: 30px;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background-color: rgb(250, 183, 121);
+	display: flex;
+	justify-items: space-between;
+	align-items: center;
+
+  }
+  .purchase:hover {
+    background-color: rgb(247, 168, 95);
+  }
+
+/* ############################################## */
+/*           BURBUJA CARRITO DE COMPRA            */
+/* ############################################## */
