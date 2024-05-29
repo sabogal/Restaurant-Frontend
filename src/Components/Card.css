@@ -8,7 +8,7 @@
 	border: 0px;
 	border-color: tomato;
 	border-style: solid;
-	max-width: 100%; 
+	max-width: 25rem; 
 
 }
 
@@ -106,7 +106,7 @@
 }
 .purchase {
     cursor: pointer;
-    width: 60%;
+  
     border-radius: 30px;
     padding: 0.8rem 1.5rem;
     font-weight: bold;

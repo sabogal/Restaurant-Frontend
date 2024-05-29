@@ -6,14 +6,15 @@ import Sidebar from '../Components/sidebar';
 import { Menus } from '../Components/Sidebarvaresolar';
 import Logo from '../assets/Img/logo1.png';
 import {rutes} from '../Components/urls'
-const Users = () => {
+import { DatateblePt } from '../Components/DatateblePt';
+const Product = () => {
 
-    const [Infousers, setInfousers] = useState([]);
+    const [InfoProducts, setInfoProducts] = useState([]);
     let token = Cookies.get("102365");
     useEffect(() => {
-      showData("GET", token, rutes.user.GET)
+      showData("GET", token, rutes.products.url)
         .then((resultinfo) => {
-          setInfousers(resultinfo);
+          setInfoProducts(resultinfo);
         })
         .catch((error) => console.log("error", error));
     }, []);
@@ -28,12 +29,12 @@ const Users = () => {
       
       <div className="pl-24 pr-4 md:pl-20 pt-5 md:pr-8 text-tertiary-200 h-screen">
  
-      <h2 className="text-gray-100 text-3xl font-light p-1 flex  items-center justify-center ">Users</h2>
-      <Datateble info={Infousers}/>
+      <h2 className="text-gray-100 text-3xl font-light p-1 flex  items-center justify-center ">Products</h2>
+      <DatateblePt info={InfoProducts}/>
       </div>
     </div>
   </main>
   )
 }
 
-export default Users
+export default Product

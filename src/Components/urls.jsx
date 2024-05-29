@@ -3,16 +3,22 @@ export const domain = 'https://hoze.emcali.net.co/'
 
 export const rutes = {
     login: {
-        url: domain + '/login/'
+        url: domain + 'login/'
     }, 
     logout: {
-        url: domain + '/logout/'
+        url: domain + 'logout/'
     },
     user: {
-        GET: domain + '/user/'
+        GET: domain + 'user/'
     },
     products: {
-        url: domain + '/products/'
+        url: domain + 'products/'
+    },
+    groups: {
+        url: domain + 'user/groups/'
+    },
+    workorder: {
+        url: domain + 'workorder/'
     }
 
 }

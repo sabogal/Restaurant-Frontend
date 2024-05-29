@@ -11,6 +11,9 @@ export const ProductDetail = () => {
         context.setCount(context.count + 1)
       }
 
+      let productShowArray = Object.values(context.cartProducts);
+
+      console.log(context);
     return (
         <aside className={`${context.isProductDetailOpen ? 'flex' : 'hidden'} w-[360px] flex flex-col fixed right-0 border border-gray-300 rounded-lg top-4 bg-white h-5/6`}>
             <div className='flex flex-col items-center p-6'>
@@ -21,16 +24,16 @@ export const ProductDetail = () => {
                 </div>
                 <div>
                     <figure>
-                        <img className="w-96 h-48 object-cover rounded-xl" src={domain + context.productShow.image} />
+                        <img className="w-96 h-48 object-cover rounded-xl" src={domain + context.cartProducts.image} />
                     </figure>
                     <p className='flex flex-col  justify-center mt-10'>
-                        <span className='font-medium text-2xl text-black mb-4'>{context.productShow.name}</span>
-                        <span className='ont-medium text-md text-gray-700'>$ {context.productShow.price} pesos</span>
+                        <span className='font-medium text-2xl text-black mb-4'>{context.cartProducts.name}</span>
+                        <span className='ont-medium text-md text-gray-700'>$ {context.cartProducts.price} pesos</span>
 
                     </p>
                     <div className="flex justify-start mt-10 text-black">
-                        <button className="purchase" onClick={() => addProduct(context.productShow)}>
-                            Argregar al carrito <Plus />
+                        <button className="purchase" onClick={() => addProduct(context.cartProducts)}>
+                            Agregar al carrito <Plus />
                         </button>
                     </div>
                 </div>

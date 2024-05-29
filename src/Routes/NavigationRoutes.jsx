@@ -14,6 +14,8 @@ import Coti from "../Page/Coti";
 import Sale from "../Page/Sale";
 import Ot from "../Page/OT";
 import Facture from "../Components/Facture";
+import Orders from "../Page/Orders";
+import Product from "../Page/product";
 
 export const NavigationRoutes = () => {
   return (
@@ -26,6 +28,9 @@ export const NavigationRoutes = () => {
           </Route>
           <Route element={<PrivateRoutes />}>
             <Route exact path="/" element={<Dashboard />} />
+            <Route exact path="/Orders" element={<Orders />} />
+            <Route exact path="/Products" element={<Product />} />
+            
             <Route exact path="/Users" element={<Users />} />
             <Route exact path="/Ware" element={<Ware />} />
             <Route exact path="/Reports" element={<Ot />} />
